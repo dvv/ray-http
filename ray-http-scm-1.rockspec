@@ -19,7 +19,6 @@ build = {
     modules = {
       ["ray.http"] = "http.lua",
       ["ray.utils"] = "utils.lua",
-      --["ray.http.parser"] = {"http/http_parser.c", "http/lhttp_parser.c"},
-      ["ray.http.parser"] = {"http/http_parser.c", "http/lua-http-parser.c"},
+      ["ray.http.parser"] = {"parser/http_parser.c", "parser/lua-http-parser.c"},
     },
 }

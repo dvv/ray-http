@@ -79,7 +79,7 @@ function http.create_server(handler, port, host, backlog)
       })
       -- feed client data to http parser
       while true do
-        p('READ LOOP TOP', client, client:writable())
+        p('READ LOOP TOP', client:readable(), client:writable())
         local nread, chunk = client:read()
         print('READ:', nread, chunk)
         if nread then
